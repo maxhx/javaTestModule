@@ -1,10 +1,21 @@
 package plugins.beanutils;
 
+import java.util.Map;
+
 public class _POJO {
 	
 	private String attr1;
 	private String attr2;
+	private Object map3;
 	
+	
+	
+	public Object getMap3() {
+		return map3;
+	}
+	public void setMap3(Object map3) {
+		this.map3 = map3;
+	}
 	public String getAttr1() {
 		return attr1;
 	}
@@ -42,8 +53,17 @@ public class _POJO {
 			this.attr3 = attr3;
 		}
 		
+		@Override
+		public String toString() {
+			return String.format("attr1:%s,attr2:%s,attr3:%s", this.attr1,this.attr2,this.attr3);
+		}
 		
-		
+	}
+
+
+	@Override
+	public String toString() {
+		return String.format("attr1:%s,attr2:%s,map3:%s", this.attr1,this.attr2,this.map3);
 	}
 	
 	
