@@ -1,7 +1,5 @@
 package plugins.beanutils;
 
-import java.util.Map;
-
 public class _POJO {
 	
 	private String attr1;
