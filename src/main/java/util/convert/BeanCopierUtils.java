@@ -1,6 +1,9 @@
 package util.convert;
 
+import java.lang.reflect.Field;
+
 import net.sf.cglib.beans.BeanCopier;
+import net.sf.cglib.core.Converter;
 import util.convert.entity.Man;
 import util.convert.entity.Person;
 
@@ -13,7 +16,9 @@ public class BeanCopierUtils {
 
 	public static void main(String[] args) {
 		
-		seniorClassCopierCase();
+//		seniorClassCopierCase();
+		
+		useConverterCase();
 	}
 	
 	/**普通类属性复制*/
@@ -39,6 +44,25 @@ public class BeanCopierUtils {
 		
 		System.out.println(p1.toString());
 		System.out.println(m.toString());
+	}
+	
+	
+	private static void useConverterCase(){
+		Person p1 = new Person();
+		p1.setAge(1);
+		Man m = new Man();
+		BeanCopier cope = BeanCopier.create(Person.class, Man.class, true);
+		cope.copy(p1, m, new Converter() {
+			
+			public Object convert(Object value, Class target, Object context) {
+				Man man = new Man();
+				Field[] fs = value.getClass().getFields();
+				for(Field f:fs){
+					System.out.println(f.getName());
+				}
+				return null;
+			}
+		});
 	}
 
 }
