@@ -1,9 +1,6 @@
 
 package algorithm;
 
-
-import java.util.Arrays;
-
 /**
  *
  * SortCollection

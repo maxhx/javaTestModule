@@ -3,13 +3,17 @@ package algorithm;
 
 import java.util.*;
 
-public class Creedy {
-
-	/**
-	 * ����
-	 */
+/** 
+* @ClassName: CreedyCase 
+* @Description: 贪婪算法Demo
+* @author maihx
+* 创建时间 2017年4月23日 上午11:14:39 
+*  
+*/
+public class CreedyCase {
+	//测试任务
 	public static void main(String[] args) {
-		// 1.�����һ������
+		//随机构造一批任务
 		List<Pair<Integer>> inputList = new ArrayList<Pair<Integer>>();
 		Random rand = new Random();
 		for (int n = 0; n < 20; ++n) {
@@ -18,21 +22,23 @@ public class Creedy {
 			Pair<Integer> pair = new Pair<Integer>(left, right);
 			inputList.add(pair);
 		}
-		// �������б?����ʱ������Ҳ���Ǹ��right�ֶν�������
+		//将任务列表按结束时间排序（也就是根据right字段进行排序）
 		sortByRight(inputList);
 		printPairList(inputList);
-		// ִ���㷨
+		// 执行算法
 		List<Pair<Integer>> outputList = algorithm(inputList);
 		System.out.println();
 		printPairList(outputList);
 	}
 
-	/**
-	 * ̰���㷨
-	 * 
-	 * @param inputList
-	 * @return ʹ�����������񷽰�
-	 */
+	/** 
+	* @Title: algorithm 
+	* @Description: 贪婪算法
+	* @param inputList
+	* @return List<Pair<T>> 使数量最多的任务方案
+	* @throws
+	* @author Administrator 创建时间:2017年4月23日 上午11:31:22 
+	*/
 	public static <T extends Comparable<T>> List<Pair<T>> algorithm(
 			List<Pair<T>> inputList) {
 		if (null == inputList || inputList.size() == 0 || inputList.size() == 1) {
@@ -58,22 +64,26 @@ public class Creedy {
 		return outputList;
 	}
 
-	/**
-	 * �Դ����List<Pair<T>>�����������ʹPair���right��С��������
-	 * 
-	 * @param inputList
-	 */
+	/** 
+	* @Title: sortByRight 
+	* @Description: 对传入的List<Pair<T>>对象进行排序，使Pair根据right从小到大排序。
+	* @param inputList void
+	* @throws
+	* @author Administrator 创建时间:2017年4月23日 上午11:23:16 
+	*/
 	private static <T extends Comparable<T>> void sortByRight(
 			List<Pair<T>> inputList) {
 		CompareByRight<T> comparator = new CompareByRight<T>();
 		Collections.sort(inputList, comparator);
 	}
 
-	/**
-	 * ��ӡһ��List<Pair<T>>����
-	 * 
-	 * @param inputList
-	 */
+	/** 
+	* @Title: printPairList 
+	* @Description: 打印一个List<Pair<T>>对象。
+	* @param inputList void
+	* @throws
+	* @author Administrator 创建时间:2017年4月23日 上午11:23:04 
+	*/
 	private static <T extends Comparable<T>> void printPairList(
 			List<Pair<T>> inputList) {
 		for (Pair<T> pair : inputList) {
@@ -82,11 +92,15 @@ public class Creedy {
 	}
 }
 
-/**
- * ���Pair.right�Ƚ�����Pair������Conlections.sort()������
- * 
- * @param <T>
- */
+
+/** 
+* @ClassName: CompareByRight 
+* @Description: 根据Pair.right比较两个Pair。用于Conlections.sort()方法。 
+* @author Administrator
+* 创建时间 2017年4月23日 上午11:22:34 
+* 
+* @param <T> 
+*/
 class CompareByRight<T extends Comparable<T>> implements Comparator<Pair<T>> {
 	public int compare(Pair<T> o1, Pair<T> o2) {
 		T r1 = o1.getRight();
@@ -96,11 +110,14 @@ class CompareByRight<T extends Comparable<T>> implements Comparator<Pair<T>> {
 	}
 }
 
-/**
- * ���һ����������е�װ����ģ����д�ˡ�left��ʾ��ʼʱ�䣬right��ʾ����ʱ�䡣
- * 
- * @param <T>
- */
+/** 
+* @ClassName: Pair 
+* @Description: 代表一个任务对象。有点装逼用模板来写了。left表示开始时间，right表示结束时间。
+* @author Administrator
+* 创建时间 2017年4月23日 上午11:22:54 
+* 
+* @param <T> 
+*/
 class Pair<T extends Comparable<T>> {
 	private T left;
 	private T right;
