@@ -1,8 +1,8 @@
-package webservice.restful;
+package com.webservice.restful;
 
 import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
 
-import webservice.restful.RoomDAO.Rooms;
+import com.webservice.restful.RoomDAO.Rooms;
 
 public class Server {
 	public static void main(String[] args) {  

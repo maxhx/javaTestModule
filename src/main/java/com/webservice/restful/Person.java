@@ -1,4 +1,4 @@
-package webservice.restful;
+package com.webservice.restful;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

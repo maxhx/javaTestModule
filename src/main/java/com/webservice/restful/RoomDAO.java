@@ -1,4 +1,4 @@
-package webservice.restful;
+package com.webservice.restful;
 
 import java.util.HashMap;
 import java.util.Map;

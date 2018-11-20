@@ -1,4 +1,4 @@
-package swing;
+package com.swing;
 
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
