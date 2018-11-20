@@ -1,5 +1,8 @@
 package core;
 
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 
 /** 
@@ -17,5 +20,6 @@ public class SimapleTestCase {
 		//格式化输出
 		System.out.printf("[打印++i]_%s",++i);
 	}
+	
 
 }

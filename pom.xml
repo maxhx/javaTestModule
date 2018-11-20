@@ -74,7 +74,7 @@
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
 			<version>3.1.2</version>
 		</dependency>
-
+		<!-- 缓存start -->
 		<dependency>
 			<groupId>com.whalin</groupId>
 			<artifactId>Memcached-Java-Client</artifactId>
@@ -86,21 +86,34 @@
 			<artifactId>xmemcached</artifactId>
 			<version>2.0.0</version>
 		</dependency>
-		
+		<!-- 缓存 end -->
+
 		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>3.2.1</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
 		<dependency>
-		    <groupId>redis.clients</groupId>
-		    <artifactId>jedis</artifactId>
-		    <version>2.9.0</version>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.9.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.53</version>
+		</dependency>
 
+		<!-- 图片压缩 -->
+		<dependency>
+			<groupId>net.coobird</groupId>
+			<artifactId>thumbnailator</artifactId>
+			<version>0.4.8</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>javaTestModule</finalName>
