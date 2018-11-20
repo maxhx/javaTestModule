@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author MAIHX
- *
- */
-package swing;
