@@ -1,10 +1,7 @@
 
 package com.core.algorithm.binaryTree;
 /**
- * @ClassName BinaryTree
- * @author 	 max	 
- * @time      4:53:41 PM
- * @date      Mar 19, 2013 
+ * @author maihx	 
  */
 public class BinaryTree {
 	

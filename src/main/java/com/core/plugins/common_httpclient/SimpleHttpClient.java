@@ -10,10 +10,10 @@ import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 
 /**
+ * @author maihx
  * 提交参数演示
  * 该程序连接到一个用于查询手机号码所属地的页面
  * 以便查询号码段1330227所在的省份以及城市
- * @author MAIHX
  *
  */
 public class SimpleHttpClient {

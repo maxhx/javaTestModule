@@ -6,9 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author lenovo
- * 
+ * 八皇后算法
  */
 public class EightQueenQs {
 

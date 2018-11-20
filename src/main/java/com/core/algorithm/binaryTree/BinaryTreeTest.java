@@ -3,10 +3,7 @@ package com.core.algorithm.binaryTree;
 
 
 /**
- * @ClassName BinaryTreeTest
- * @author 	 max	 
- * @time      4:48:34 PM
- * @date      Mar 19, 2013 
+ * @author maihx
  */
 public class BinaryTreeTest {
 	

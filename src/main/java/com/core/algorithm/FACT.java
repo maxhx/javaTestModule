@@ -2,7 +2,10 @@ package com.core.algorithm;
 
 import java.util.Scanner;
 
-/** 实现阶乘 */
+/**
+ * @author maihx
+ *	实现阶乘
+ */
 public class FACT {
 
 	public static void main(String[] args) {

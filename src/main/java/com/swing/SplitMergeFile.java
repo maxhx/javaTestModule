@@ -31,7 +31,7 @@ import javax.swing.JTextField;
  * http://outofmemory.cn/code-snippet/37657/fenge-hebing-file-tuxinghua-
  * component
  * 
- * @author MAIHX
+ * @author maihx
  *
  */
 public class SplitMergeFile implements ActionListener {

@@ -8,9 +8,8 @@ import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.GetMethod;
 
 /**
+ * @author maihx
  * 最简单的HTTP客户端,用来演示通过GET或者POST方式访问某个页面  
- * @author MAIHX
- *
  */
 public class SimpleClient {
 	

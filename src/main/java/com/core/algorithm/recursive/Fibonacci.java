@@ -1,10 +1,8 @@
 
 package com.core.algorithm.recursive;
 /**
- * @author mhx
- * 2014-9-25 10:08:44
+ * @author maihx
  * 非波拉契数列
- * @version
  */
 public class Fibonacci {
 	

@@ -16,9 +16,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 
 /**
+ * @author maihx
  * 摘自 http://www.iteye.com/topic/638206
- * @author MAIHX
- *
  */
 @SuppressWarnings("deprecation")
 public class RenRen {

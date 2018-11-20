@@ -13,7 +13,7 @@ import net.coobird.thumbnailator.geometry.Positions;
 
 /**
  * @author maihx
- *
+ * 压缩图片
  */
 public class ThumbnailatorTest {
 
