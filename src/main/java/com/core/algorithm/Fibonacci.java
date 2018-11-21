@@ -1,5 +1,5 @@
 
-package com.core.algorithm.recursive;
+package com.core.algorithm;
 /**
  * @author maihx
  * 非波拉契数列
